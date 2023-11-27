@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OPERAÇÕES EM VETOR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+    <img src="Logo-DomHelder.jpg" alt="" id = "Logo-DomHelder">
+    <h1>OPERAÇÕES EM VETOR</h1>
+
+    </header>
+    <div id="input-container">
+    <label for="numCasas">NÚMERO DE CASAS DO VETOR: </label>
+    <input type="number" id="numCasas" />
+    <button onclick="criarVetor()">PREENCHER VETOR</button>
+    <button onclick="limparTela()">RESET</button>
+    </div>
+    <div id="resultado"></div>
+    <div id="resultado-text-container">
+    <p id="resultado-text"></p>
+    </div>
+    <canvas id="histograma" width="400" height="400"></canvas>
+    
+    <footer>
+      <h2 id="contatos-link" style="cursor: pointer;">Contatos</h2>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <p>Email: D21500@academico.domghelder.edu.br / D22425@academico.domhelder.edu.br</p>
+              </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
